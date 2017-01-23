@@ -7,17 +7,31 @@ import Places from './components/Places'
 
 
 class App extends Component {
+  componentDidMount(){
+    console.log('componentDidMount');
+  }
+
+
   render(){
     const location = {
       lat: -41.28664,
       lng: 174.77557
     }
 
+    const markers = [
+      {
+        location:{
+          lat: -41.28664,
+          lng: 174.77557
+        }
+      }
+    ]
+
     return(
       <div>
         Good Citizen App
-      <div style={{width:300, height:600, background:'red'}}>
-        <Map center={location} />
+      <div style={{width:800, height:1000, background:'red'}}>
+        <Map center={location} markers={markers} />
       </div>
 
         <Places />
