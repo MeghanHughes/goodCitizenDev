@@ -15,8 +15,8 @@ class App extends Component {
 
     return(
       <div>
-        Good Citizen App
-      <div style={{width:300, height:600, background:'red'}}>
+        Good Citizen 
+      <div style={{width:600, height:900, background:'red'}}>
         <Map center={location} />
       </div>
 
